@@ -118,8 +118,8 @@ a:hover {
 
 
 .overview-card {
-	width: 800px;
-	height: 200px;
+	width: 90%;
+	height: 100%;
 	padding: 20px;
 	margin-bottom: 20px;
 	box-shadow: 0 0 10px lightgrey;
@@ -147,4 +147,34 @@ a:hover {
   height: 100%;
   background-color: #E3815F;
   margin-top:200px;
+}
+
+ul {
+	list-style: none;
+}
+
+li::before {content: "•"; 
+	color: #E3815F; 
+	font-size: 20px;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+	font-weight: 700;
+
+}
+
+.sample-img {
+	max-width: 100%;
+	border-radius: 8px;
+
+}
+
+
+.sample-img-text {
+	position: absolute;
+	top: 10px;
+	left: 30px;
+	color: #FFFFFF;
+	font-weight: 800;
+	font-size: 40px;
 }
