@@ -123,10 +123,12 @@ a:hover {
 	padding: 20px;
 	margin-bottom: 20px;
 	box-shadow: 0 0 10px lightgrey;
+	background-color: #FFFFFF;
+	margin: auto;
 }
 
 .overview-card:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 	transition: transform .5s;
 }
 
@@ -153,14 +155,9 @@ ul {
 	list-style: none;
 }
 
-li::before {content: "•"; 
-	color: #E3815F; 
+li {
 	font-size: 20px;
-	display: inline-block;
-	width: 1em;
-	margin-left: -1em;
-	font-weight: 700;
-
+	line-height: 2;
 }
 
 .sample-img {
@@ -177,4 +174,14 @@ li::before {content: "•";
 	color: #FFFFFF;
 	font-weight: 800;
 	font-size: 40px;
+}
+
+#sample-page-container {
+	background-color: #E3815F;
+}
+
+.sample-page-header {
+	color: #FFFFFF;
+	padding: 20px;
+	text-align: left;
 }
