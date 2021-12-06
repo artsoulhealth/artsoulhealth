@@ -1,8 +1,9 @@
 body {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
-	
 	scroll-behavior: smooth;
+	overflow-x: hidden;
+	padding: 0px;
 }
 
 #front-page-container {
@@ -11,7 +12,7 @@ body {
 
 iframe {
 	width: 100%;
-	height: 100%;
+	height: 500px;
 }
 
 h1 {
@@ -42,8 +43,8 @@ h1 {
 
 
 #main-image {
+	max-width: 100%;
 	height: 80vh;
-	padding: 20px;
 	position: fixed;
 	z-index: -3;
 }
@@ -55,7 +56,6 @@ h1 {
 	top: 0px;
 	left: 0px;
 	z-index: -1;
-	margin: auto;
 }
 
 #main-image2 {
@@ -100,12 +100,18 @@ a:hover {
 	background-color: #FFFFFF;
 	z-index: -1;
 	margin-bottom: 0px;
+	width: 104vw;
 }
+
+#video {
+	width: 98%;
+}
+
 
 #main-text-box {
 	position: absolute;
 	right: 10px;
-	bottom: 60px;
+	bottom: 80px;
 	height: 300px;
 	background-color: #E3815F;
 	color: #FFFFFF;
@@ -233,6 +239,5 @@ li {
 
 .sample-page-header {
 	color: #FFFFFF;
-	padding: 20px;
 	text-align: left;
 }
