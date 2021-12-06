@@ -39,3 +39,14 @@ window.addEventListener("scroll", () => {
 
     document.querySelector("#main-image").style.opacity = opacity
 })
+
+document.addEventListener('DOMContentLoaded', function() { 
+document.querySelector("#learn-more").addEventListener('click', function(e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+    });
+
+})
+})

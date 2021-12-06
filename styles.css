@@ -121,8 +121,10 @@ a:hover {
 	z-index: 1;
 	border-radius: 5px;
 	border: 3px solid #FFFFFF; 
-	
+	display: flex;
+	flex-direction: column;
 }
+
 
 #header {
 	position: absolute;
