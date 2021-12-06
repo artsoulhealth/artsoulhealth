@@ -22,4 +22,20 @@ function change() {
 
 change()
 setInterval(change, 7000)
+
+})
+
+const checkpoint = 100
+
+window.addEventListener("scroll", () => {
+    const position = window.pageYOffset;
+    let opacity;
+
+    if (position <= checkpoint) {
+        opacity = 1
+    } else {
+        opacity = 0.2
+    }
+
+    document.querySelector("#main-image").style.opacity = opacity
 })

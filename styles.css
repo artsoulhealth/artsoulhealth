@@ -47,6 +47,7 @@ h1 {
 	height: 80vh;
 	position: fixed;
 	z-index: -3;
+	transition: opacity .7s;
 }
 
 #main-image2-container {
@@ -146,7 +147,7 @@ a:hover {
 	background-color: #FFFFFF;
 	position:fixed;
 	width: 100%;
-	z-index 9;
+	z-index: 9;
 	margin-top: 0px;
 	margin-left: 0px;
 }
