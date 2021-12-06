@@ -98,7 +98,7 @@ a:hover {
 	position: relative;
 	padding: 20px;
 	background-color: #FFFFFF;
-	z-index: -1;
+	z-index: 1;
 	margin-bottom: 0px;
 	width: 104vw;
 }
@@ -117,7 +117,7 @@ a:hover {
 	color: #FFFFFF;
 	max-width: 350px;
 	padding: 15px;
-	z-index: -1;
+	z-index: 1;
 	border-radius: 5px;
 	border: 3px solid #FFFFFF; 
 	
