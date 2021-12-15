@@ -21,7 +21,7 @@ function change() {
 }
 
 change()
-setInterval(change, 7000)
+setInterval(change, 5000)
 
 })
 
