@@ -202,7 +202,7 @@ a:hover {
 }
 
 .overview-card {
-  width: 90%;
+  max-width: 80%;
   padding: 20px;
   margin-bottom: 20px;
   box-shadow: 0 0 10px lightgrey;
