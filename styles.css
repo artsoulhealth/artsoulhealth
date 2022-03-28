@@ -123,8 +123,13 @@ a {
 
 a:hover {
   text-decoration: underline;
-  background-color: #e3815f;
-  color: #ffffff;
+  text-decoration-color: #A35C45;
+  text-decoration-thickness: 4px;
+  color: #A35C45;
+}
+
+a:active {
+  color: #A35C45;
 }
 
 #video-block {
@@ -192,7 +197,12 @@ a:hover {
 }
 
 .btn-primary {
-  background-color: #e3815f;
+  background-color: #E6683E;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #A35C45;
 }
 
 .blockquote-footer {
@@ -281,3 +291,54 @@ li {
   max-width: 75%;
 
 }
+
+img {
+  object-fit: contain;
+}
+
+#research-container {
+  position: relative;
+  max-width: 95%;
+  top: 100px;
+}
+
+@media (max-width: 400px) {
+  #header {
+    background-color: #FFF;
+    position: static;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  #main-image2-container {
+    max-height: 200px;
+  }
+
+  #main-image {
+    visibility: hidden;
+  }
+
+  #main-text-box {
+    display: none;
+  }
+
+  .btn-primary {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .invisible-div {
+    display: none;
+  }
+
+  #quote-row {
+    padding: 10px;
+    text-align: center;
+  }
+
+  body {
+    text-align: center;
+  }
+}
+
