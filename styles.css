@@ -12,8 +12,7 @@ html {
   padding: 0px;
 }
 
-#about-body,
-#sample-page-container {
+#about-body {
   padding-top: 80px;
 }
 
@@ -232,14 +231,14 @@ a:active {
   width: 50vw;
 }
 
-/* .overview-card {
-  max-width: 80%;
+.overview-card {
+  /* max-width: 80%; */
   padding: 20px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   box-shadow: 0 0 10px lightgrey;
   background-color: #ffffff;
   margin: auto;
-} */
+}
 
 .overview-card:hover {
   transform: scale(1.05);
