@@ -312,7 +312,7 @@ img {
 
 @media (max-width: 576px) {
     #header {
-        background-color: #fff;
+        /* background-color: #fff; */
         position: static;
         text-align: center;
         margin-top: 50px;
@@ -323,7 +323,8 @@ img {
     }
 
     #main-image {
-        visibility: hidden;
+        /* visibility: hidden; */
+        width: 225%;
     }
 
     #main-text-box {
@@ -337,7 +338,8 @@ img {
     }
 
     .invisible-div {
-        display: none;
+        /* display: none; */
+        height: 20vh;
     }
 
     #quote-row {
@@ -356,7 +358,7 @@ img {
 }
 
 .subtitle-responsive {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 .temp-section-title-responsive {
@@ -376,7 +378,7 @@ img {
     }
 
     .subtitle-responsive {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .temp-section-title-responsive {
