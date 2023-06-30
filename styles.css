@@ -99,7 +99,7 @@ h5 {
 #card-row .card-title {
     color: #e3815f;
     font-weight: 700;
-    font-size: 2.5em;
+    /* font-size: 2.5em; */
 }
 
 .footer {
@@ -141,15 +141,10 @@ a:active {
     width: 104vw;
 }
 
-#video {
-    width: 98%;
-}
-
 #main-text-box {
     position: absolute;
     right: 10px;
     bottom: 60px;
-    height: 300px;
     background-color: #e3815f;
     color: #ffffff;
     max-width: 350px;
@@ -327,8 +322,20 @@ img {
         width: 225%;
     }
 
+    #video-block {
+        width: auto;
+    }
+
     #main-text-box {
+        position: inherit;
+    }
+
+    #main-text-box > #learn-more {
         display: none;
+    }
+
+    iframe {
+        height: 200px;
     }
 
     .btn-primary {
