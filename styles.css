@@ -378,6 +378,15 @@ img {
 
 /* } */
 
+@media screen and (max-width: 576px) {
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+}
+
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .title-responsive {
