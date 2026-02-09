@@ -13,13 +13,44 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
 
+    <!-- lightGallery CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css">
+
     <style>
         .flex-column {
             max-width: 280px;
         }
 
-        img {
+        #gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #gallery-container .gallery-col {
+            display: flex;
+            flex-direction: column;
+            max-width: 280px;
+        }
+
+        #gallery-container .gallery-col a {
+            display: block;
+            overflow: hidden;
+        }
+
+        #gallery-container .gallery-col a:hover {
+            text-decoration: none;
+        }
+
+        #gallery-container .gallery-col a img {
+            width: 100%;
+            display: block;
             margin: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        #gallery-container .gallery-col a:hover img {
+            transform: scale(1.05);
         }
     </style>
 
@@ -62,39 +93,76 @@
         </div>
     </nav>
 
-
     <div class="container-fluid" style="padding-top: 8rem;">
-        <!-- <div class="d-flex flex-row flex-wrap justify-content-lg-start justify-content-xl-center"> -->
-        <div class="d-flex flex-row flex-wrap justify-content-center">
-        <div class="d-flex flex-column">
-                <img src="images/IMG_1683.JPG" class="img-fluid">
-                <img src="images/IMG_0871.JPG" class="img-fluid">
-                <img src="images/D19B.jpg" class="img-fluid">
-                <img src="images/sign.jpeg" class="img-fluid">
-                <img src="images/meeting.jpeg" class="img-fluid">
+        <div id="gallery-container" class="d-flex flex-row flex-wrap justify-content-center">
+            <div class="gallery-col d-flex flex-column">
+                <a href="images/IMG_1683.JPG">
+                    <img src="images/thumbs/IMG_1683.JPG" loading="lazy" alt="Workshop activity" class="img-fluid">
+                </a>
+                <a href="images/IMG_0871.JPG">
+                    <img src="images/thumbs/IMG_0871.JPG" loading="lazy" alt="Workshop activity" class="img-fluid">
+                </a>
+                <a href="images/D19B.jpg">
+                    <img src="images/thumbs/D19B.jpg" loading="lazy" alt="Workshop activity" class="img-fluid">
+                </a>
+                <a href="images/sign.jpeg">
+                    <img src="images/thumbs/sign.jpeg" loading="lazy" alt="Workshop sign" class="img-fluid">
+                </a>
+                <a href="images/meeting.jpeg">
+                    <img src="images/thumbs/meeting.jpeg" loading="lazy" alt="Workshop meeting" class="img-fluid">
+                </a>
             </div>
-            <div class="d-flex flex-column">
-                <img src="images/cards.jpg" class="img-fluid">
-                <img src="images/man_drawing.jpg" class="img-fluid">
-                <img src="images/group.jpg" class="img-fluid">
-                <img src="images/paper-hands.jpg" class="img-fluid">
-                <img src="images/IMG_2544.jpeg" class="img-fluid">
+            <div class="gallery-col d-flex flex-column">
+                <a href="images/cards.jpg">
+                    <img src="images/thumbs/cards.jpg" loading="lazy" alt="Workshop cards" class="img-fluid">
+                </a>
+                <a href="images/man_drawing.jpg">
+                    <img src="images/thumbs/man_drawing.jpg" loading="lazy" alt="Participant drawing" class="img-fluid">
+                </a>
+                <a href="images/group.jpg">
+                    <img src="images/thumbs/group.jpg" loading="lazy" alt="Group activity" class="img-fluid">
+                </a>
+                <a href="images/paper-hands.jpg">
+                    <img src="images/thumbs/paper-hands.jpg" loading="lazy" alt="Paper hands art" class="img-fluid">
+                </a>
+                <a href="images/IMG_2544.jpeg">
+                    <img src="images/thumbs/IMG_2544.jpeg" loading="lazy" alt="Workshop activity" class="img-fluid">
+                </a>
             </div>
-            <div class="d-flex flex-column">
-                <img src="images/IMG_0878.JPG" class="img-fluid">
-                <img src="images/CF66.jpg" class="img-fluid">
-                <img src="images/art_detail.jpeg" class="img-fluid">
-                <img src="images/create-inspire-heal.jpg" class="img-fluid">
-                <img src="images/workshop.jpeg" class="img-fluid">
+            <div class="gallery-col d-flex flex-column">
+                <a href="images/IMG_0878.JPG">
+                    <img src="images/thumbs/IMG_0878.JPG" loading="lazy" alt="Workshop activity" class="img-fluid">
+                </a>
+                <a href="images/CF66.jpg">
+                    <img src="images/thumbs/CF66.jpg" loading="lazy" alt="Workshop activity" class="img-fluid">
+                </a>
+                <a href="images/art_detail.jpeg">
+                    <img src="images/thumbs/art_detail.jpeg" loading="lazy" alt="Art detail" class="img-fluid">
+                </a>
+                <a href="images/create-inspire-heal.jpg">
+                    <img src="images/thumbs/create-inspire-heal.jpg" loading="lazy" alt="Create Inspire Heal" class="img-fluid">
+                </a>
+                <a href="images/workshop.jpeg">
+                    <img src="images/thumbs/workshop.jpeg" loading="lazy" alt="Workshop session" class="img-fluid">
+                </a>
             </div>
-            <div class="d-flex flex-column d-lg-none d-xl-block">
-                <img src="images/E59D-2.jpg" class="img-fluid">
-                <img src="images/people-2.jpg" class="img-fluid">
-                <img src="images/foil.jpg" class="img-fluid">
-                <img src="images/cloth-painting.jpg" class="img-fluid">
+            <div class="gallery-col d-flex flex-column d-lg-none d-xl-flex">
+                <a href="images/E59D-2.jpg">
+                    <img src="images/thumbs/E59D-2.jpg" loading="lazy" alt="Workshop activity" class="img-fluid">
+                </a>
+                <a href="images/people-2.jpg">
+                    <img src="images/thumbs/people-2.jpg" loading="lazy" alt="Participants" class="img-fluid">
+                </a>
+                <a href="images/foil.jpg">
+                    <img src="images/thumbs/foil.jpg" loading="lazy" alt="Foil art" class="img-fluid">
+                </a>
+                <a href="images/cloth-painting.jpg">
+                    <img src="images/thumbs/cloth-painting.jpg" loading="lazy" alt="Cloth painting" class="img-fluid">
+                </a>
             </div>
         </div>
     </div>
+
 	<footer class="text-lg-start bg-light" style="margin-top: 8rem;">
 		<!-- Grid container -->
 		<div class="container pt-4 pb-5">
@@ -154,6 +222,7 @@
 		</div>
 		<!-- Copyright -->
 	</footer>
+
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>
@@ -163,6 +232,20 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
 		integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
 		crossorigin="anonymous"></script>
+
+    <!-- lightGallery JS -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/lg-zoom.min.js"></script>
+
+    <script>
+        lightGallery(document.getElementById('gallery-container'), {
+            selector: '.gallery-col a',
+            plugins: [lgZoom, lgThumbnail],
+            speed: 400,
+            licenseKey: '0000-0000-000-0000'
+        });
+    </script>
 
     <!-- External JS -->
     <script src="scripts.js"></script>
