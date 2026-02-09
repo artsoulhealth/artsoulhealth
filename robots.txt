@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://artsoulhealth.com/sitemap.xml
